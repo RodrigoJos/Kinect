@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kinect"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow"  Width="850" SizeToContent="Height" Loaded="Window_Loaded">
     <Grid>
-        
+        <Image x:Name="MostrarVideo" HorizontalAlignment="Left" Height="230" Margin="10,30,0,0" VerticalAlignment="Top" Width="457" Loaded="MostrarVideo_Loaded"/>
+        <TextBox x:Name="tbMsg" HorizontalAlignment="Left" Height="85" Margin="10,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" FontSize="24"/>
+        <TextBox x:Name="tbStatus" HorizontalAlignment="Left" Height="85" Margin="501,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" FontSize="36" TextChanged="tbStatus_TextChanged"/>
+
     </Grid>
 </Window>
